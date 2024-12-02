@@ -1,0 +1,4 @@
+map_name: world_war_i_1914_improved
+games:
+- {game_name: World War I 1914 Improved, file_name: world_war_i_1914_improved.xml}
+- {game_name: World War I 1914 Tournament Rules, file_name: world_war_i_1914_tournament.xml}

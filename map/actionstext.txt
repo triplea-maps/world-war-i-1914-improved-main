@@ -1,0 +1,7 @@
+Russian_Revolution.BUTTON=[Begin] Begin the Russian Revolution
+Russian_Revolution.DESCRIPTION=The Russian have revolted, will you allow this.
+Russian_Revolution.NOTIFICATION_SUCCESS=The Russian Revolution has begon.
+Russian_Revolution.OTHER_NOTIFICATION_SUCCESS=The Russians are in a revolution.
+Russian_Revolution.NOTIFICATION_FAILURE=You have chosen to stop the revolution!
+Russian_Revolution.OTHER_NOTIFICATION_FAILURE=Germany has not allowed the Russian to revolt!
+Russian_Revolution.ACCEPT_QUESTION=Do you agree with Germany to begin your revolution?

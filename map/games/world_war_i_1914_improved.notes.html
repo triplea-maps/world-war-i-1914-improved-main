@@ -1,0 +1,64 @@
+<div style="text-align:justify;">Based on the board game "Axis & Allies: WWI 1914"
+<br>
+<br>Map Version: 1.3
+<br>
+<br>This is an improvement to the World War I 1914 map by ColonelCarter. Almost all bugs that existed in the original map have been fixed. Improvements made by VictoryFirst.
+<br>
+<br>Please report any bugs by sending an email to victorlucasbeck@gmail.com, or contacting me on axisandallies.org or forums.triplea-game.org. Thanks.
+<br>
+<br><b>Overview of the improvements:</b>
+<ul>
+<li>The Russian Revolution is for 99% handled automatically by the engine. If at the end of the Russian player turn all conditions for the Revolution are met, the German player will receive a pop-up window at the start of his turn, where he can either accept or reject the armistice. If you want to reject, click on "No Actions" and then on "Done". If accepted, click "Done" and then all Russian units will be removed from the board, and all original Russian territories controlled by Russia will become controlled by the power "Changer". No side can enter territories controlled by "Changer". All captured Russian territories will revert to their original owner, or to Neutral_True (if no original owner). If Serbia and/or Romania are still neutral at the time of revolution, they will become True Neutrals. All Russian territories that are contested at the time of the Revolution will become controlled by the power "Shared", and those will function as shared territories. Entente units cannot move into shared territories. Central Power units can move freely in and out of these territories without capturing them. You should leave at least one infantry in each of the "shared" territories. Player enforced.
+<br>After the Russian Revolution has happened, make sure to remove any Allied units still in territories controlled by "Changer" or "Shared" at the end of their respective turn. Player Enforced.
+<br>If you choose not to play with the Russian Revolution rule, you can disable it via the Game Option.</li>
+<li>All land battles will ask for a prompt to start. This allows you to choose in which contested territories you want to start a battle and in which you do not. IMPORTANT: If you move into an enemy territory that was not contested at the start of your turn, per the rules you HAVE to fight, so make sure you click yes in those cases. Player enforced.</li>
+<li>Contested territories you abandon immediately change control to the enemy.</li>
+<li>Fighters have been classified as air units, so they can move through enemy territory and over sea zones, but not be navally transported. For the US only, there is a separate unit called "fighter_land" which is classified as a land unit and can be navally transported. Any fighter units in the US home territory will be replaced with fighter_land units at the end of the Place Units Phase. The US player can use edit to convert these back to normal fighter units whenever he wants.</li>
+<li>All aligned neutrals units and territories will join the correct power when moved into the first time by an ally, or when attacked by an enemy. Note that the trigger does not happen immediately, but after all movement has been done. NOTE: True neutrals will remain true neutral, use edit to make them join the power of your choice.
+<br>IMPORTANT: When trying to capture a friendly minor power (e.g. Albania) by offloading units from a transport while in a sea zone with enemy ships (e.g. SZ 17), you have to use the Non-Combat Movement phase to move the land units to the territory. The engine will not let you unload troops to friendly territories in the Combat Movement phase when there are enemy ships present in the sea zone.</li>
+<li>Naval mines function fully in accordance with the rulebook. Although they are constantly changing control throughout the entire game due to engine limitations, the triggers have been set in such a way that the naval mines will always be controlled by the correct owner at the times it is important.
+<li>Submarines can move through enemy ships, be moved through by enemy ships, as well as submerge. IMPORTANT: Defending submarines still work incorrectly. Their rules deviate substantially from the standard rules, and therefore they are not manageable by the engine. Use an independent die roller or edit when dealing with defending sudmarines.</li>
+<li>The Central Powers have the ability to declare war on the Americans. This allows you to attack the American Navy before they enter the war. It can be enabled via Game Options. It is turned off by default. TIP: You can keep it turned off until the turn you want to declare war, in which case you can save the game, leave the game, load the save, turn the option on and start the game.</li>
+<li>Notifications have been added for the entry of the US into the war, as well as the arrival of tanks.</li>
+</ul>
+<br><b>IMPORTANT THINGS NOT SUPPORTED BY THE ENGINE (in addition to the original game notes below):</b> 
+<ul>
+<li>When all units of both sides die in a battle in a contested territory. Per the rules, this territory will change ownership to the ORIGINAL owner, however the engine will make these territories go to the LAST owner. Use edit to correct this.</li>
+<li>Defending submarines, use an independent die roller when rolling for combat against defending submarines.</li>
+<li>Unrestricted submarine warfare. Use an independent die roller and edit to follow this rule.</li>
+</ul>
+<br>Massive thanks to wc_sumpton for XML help. Without him, many things would not have been possible. Thanks to beelee for XML help. Thanks to The_Good_Captain for testing and spotting errors.
+<br>
+<br>Here are the original notes (might contain redundant information):
+<br>
+<br>----------------------------------------------------------------------------------------------
+<br>
+<br>Creator: ColonelCarter
+<br>Map Design: Zim Xero
+<br>
+<br>This map in no way takes responsibility for you knowing the rules of the game. Use of Edit Mode will be needed to make the game function as it should. Some things have been modified to be accommodating as possible, but the difference in mechanics is often too great. Play against the AI is impossible as it will blatantly cheat/play incorrectly.
+<br>
+<br><b>Known things needed to follow/edit:</b>
+<ul>
+<li>Keep to the minimum 1 infantry per army rule.</li>
+<li>Don't use the Noncombat move (other than editing); it is only there so unit movement resets.</li>
+<li>Tanks are declared as twoHit, so don't use tanks' free hit on defense. (Use the free hit if they're not already damaged and edit out the correct number of tanks if you want to take tanks as casualties)</li>
+<li>Fighters are a land unit to let them stay in conquered/enemy territory and be able to load on transports, so if you want to fly over a Sea Zone or enemy-controlled territory, use edit mode.</li>
+<li>Subs in this game don't have first strike capabilities, so they are only declared as normal ships. This means you can't submerge subs. If the defender wants to submerge in a battle, either agree to have the attacker retreat on the proper round or edit the subs out before the battle depending on the situation. (The attacker shouldn't ever want to submerge, because breaking off the attack or just taking other units as casualties before breaking off is always better.)</li>
+<li>If you break off a naval attack, transports you brought into the sea zone will be killed by the remaining defenders. Just edit them (and their cargo) back in if this happens. (This might be fixed with the 1.9 update)</li>
+<li>For deciding coastal artillery strikes, edit in a coastal_attacker of the attacking nationality into the "Coastal Barrage" territory with the correct number of defending artillery. (If there's more than 9, edit in more to one of them) Fight the "Coastal Barrage" battles before their respective amphibious assault, and remove the number of assaulters that got killed in the pre-emptive strike. You also should edit the used "Coastal Barrage" territory(s) back to their original conditions after the battle phase.</li>
+<li>If not attacking in a contested territory, just move/keep the units out during combat movement and edit them back in during noncombat movement.</li>
+<li>If performing an amphibious reinforcement, make sure there are no battleships in the offloading sea zone, or else they will bombard when they're not supposed to. Use edit mode if necessary.</li>
+<li>Change aligned neutrals to their correct power if activated by a different one. [Working on triggers to do this automatically] (Portugal: France, Belgium: France, Albania: Italians, Serbia: Russians, Romania: Russians, Bulgaria: Ottomans, Arabia: British)</li>
+<li>A human should play the neutrals, to follow the correct order of casualties when defending.</li>
+<li>If a true neutral survives the round of combat, edit their units to the power of the opponent's choice. (Unless they know they don't want to attack on their turn, then don't bother or else you'll have to edit the aligned guys out and back in again.)</li>
+<li>Victory conditions only check at the end of a round, so e.g. the Allied powers shouldn't win if Italy/USA takes the last CP capital without holding it until the Ottomans' turn the round after.</li>
+<li>When moving out of a mined Sea Zone, mines will try to fire, so just edit those ships to where they are moving. (This might be fixed with the 1.9 update)</li>
+<li>Since mines are an AA unit, they can be "captured" in naval victories. You'll have to make sure they always are owned by the proper nation, and can edit them out if their harbor gets captured, and back in if it's recontested, etc.</li>
+</ul>
+<br>
+<br>----------------------------------------------------------------------------------------------
+<br>
+<br>Basically, follow the rules and if something's not possible, use Edit Mode. A copy of the rulebook can be found here:
+<br>http://www.axisandallies.org/wp-content/uploads/2013/03/Axis-Allies-1914.pdf
+</div>
